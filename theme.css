@@ -1,0 +1,111 @@
+body {
+  /* set accent purple */
+  --accent-h: 262; /* Accent hue */
+  --accent-s: 38%; /* Accent saturation */
+  /* --accent-d: 70%; Accent lightness Dark Mode */
+  --accent-l: 65%; /* Accent lightness Light Mode */
+
+  /* !! ditinguish light and dark theme */
+  --blue: #2e80f2;
+  --pink: #ff82b2;
+  --green: #3eb4bf;
+  --yellow: #e5b567;
+  --orange: #e87d3e;
+  --red: #e83e3e;
+  --purple: #9e86c8;
+
+  --h1-color: var(--pink);
+  --h2-color: var(--blue);
+  --h3-color: var(--green);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
+
+  /* --h1-size: 1rem;
+  --h2-size: 1rem;
+  --h3-size: 1rem;
+  --h4-size: 1rem;
+  --h5-size: 1rem;
+  --h6-size: 1rem; */
+}
+
+/* cover all header style */
+.cm-s-obsidian .cm-header-1, 
+.cm-s-obsidian .cm-header-2, 
+.cm-s-obsidian .cm-header-3, 
+.cm-s-obsidian .cm-header-4, 
+.cm-s-obsidian .cm-header-5, 
+.cm-s-obsidian .cm-header-6,
+.markdown-preview-view h1, 
+.markdown-preview-view h2, 
+.markdown-preview-view h3, 
+.markdown-preview-view h4, 
+.markdown-preview-view h5, 
+.markdown-preview-view h6 {
+  font-size: var(--font-text-size, 16px) !important;
+
+  /* 1.2-1.8 */
+  /* line-height: var(--line-height-normal, 1.5) !important;   */
+
+  font-weight: bold !important;
+
+  /* letter-spacing: 0em !important; */
+  letter-spacing: normal !important;
+  
+  /* text opacity - none */
+  opacity: unset !important;
+
+  text-transform: none !important;
+
+  font-variant: normal !important;
+
+  /* margin-top: 1em !important; */
+  /* margin-bottom: 0.5em !important; */
+}
+
+/* disable inline-title color */
+.inline-title {
+  color: inherit;
+  font-size: 1rem !important;
+  letter-spacing: normal !important;
+  /* font-weight: bold !important; */
+
+}
+
+/* @settings
+
+name: Notes Pro Theme
+id: notes-pro-theme
+collapsed: false
+settings:
+  - 
+      id: my-accent
+      title: Accent Color
+      type: heading
+      level: 1
+      collapsed: false
+  - 
+      id: accent
+      title: Accent Color Pink
+      type: variable-color
+      format: hsl-split
+      default: '#ff82b2'
+  - 
+      id: accent
+      title: Accent Color Blue
+      type: variable-color
+      format: hsl-split
+      default: '#2e80f2'
+  - 
+      id: accent
+      title: Accent Color Purple
+      type: variable-color
+      format: hsl-split
+      default: '#9e86c8'
+  - 
+      id: accent
+      title: Accent Color Green
+      type: variable-color
+      format: hsl-split
+      default: '#3eb4bf'
+*/
