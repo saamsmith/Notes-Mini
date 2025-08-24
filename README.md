@@ -2,7 +2,7 @@
 A mini note theme for Obsidian.
 
 ## Light Theme Look
-![[media/light.png]]
+![light theme](media/light.png)
 
 ## Dark Theme Look
-![[media/dark.png]]
+![dark theme](media/dark.png)
