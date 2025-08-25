@@ -1,9 +1,9 @@
 body {
-  /* set accent purple */
-  --accent-h: 262; /* Accent hue */
-  --accent-s: 38%; /* Accent saturation */
+  /* set accent pink */
+  --accent-h: 337; /* Accent hue */
+  --accent-s: 100%; /* Accent saturation */
   /* --accent-d: 70%; Accent lightness Dark Mode */
-  --accent-l: 65%; /* Accent lightness Light Mode */
+  --accent-l: 75%; /* Accent lightness Light Mode */
 
   /* !! ditinguish light and dark theme */
   --blue: #2e80f2;
@@ -14,9 +14,9 @@ body {
   --red: #e83e3e;
   --purple: #9e86c8;
 
-  --h1-color: var(--pink);
-  --h2-color: var(--blue);
-  --h3-color: var(--green);
+  --h1-color: var(--blue);
+  --h2-color: var(--green);
+  --h3-color: var(--purple);
   --h4-color: var(--text-normal);
   --h5-color: var(--text-normal);
   --h6-color: var(--text-normal);
