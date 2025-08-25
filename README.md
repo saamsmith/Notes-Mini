@@ -1,4 +1,4 @@
-# Notes Pro
+# Notes Mini
 A mini note theme for Obsidian.
 
 ## Light Theme Look
