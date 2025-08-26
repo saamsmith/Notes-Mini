@@ -72,6 +72,23 @@ body {
 
 }
 
+/* disable external link color in editor & reading mode */
+/* will not impact internal link */
+.markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline,
+.external-link {
+    color: var(--text-normal);
+}
+
+/* highlight active file */
+/* body:not(.is-grabbing) .nav-file-title.is-active:hover,
+body:not(.is-grabbing) .nav-folder-title.is-active:hover,
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+    color: var(--nav-item-color-active);
+    background-color: var(--nav-item-background-active);
+} */
+
 /* @settings
 
 name: Notes Pro Theme
