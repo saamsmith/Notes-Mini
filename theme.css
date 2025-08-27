@@ -1,22 +1,30 @@
+/* features
+0. set uniform header 1-6, same font size and font weight
+1. set different header color for header 1-3
+2. disable header color 4-6
+3. disable inline title color
+4. set highlight text color to accent
+*/
+
 body {
-  /* set accent pink */
+  /* set accent things pink */
   --accent-h: 337; /* Accent hue */
   --accent-s: 100%; /* Accent saturation */
   /* --accent-d: 70%; Accent lightness Dark Mode */
   --accent-l: 75%; /* Accent lightness Light Mode */
 
   /* !! ditinguish light and dark theme */
-  --blue: #2e80f2;
-  --pink: #ff82b2;
-  --green: #3eb4bf;
-  --yellow: #e5b567;
-  --orange: #e87d3e;
-  --red: #e83e3e;
-  --purple: #9e86c8;
+  --things-blue: #2e80f2;
+  --things-pink: #ff82b2;
+  --things-green: #3eb4bf;
+  --things-yellow: #e5b567;
+  --things-orange: #e87d3e;
+  --things-red: #e83e3e;
+  --things-purple: #9e86c8;
 
-  --h1-color: var(--blue);
-  --h2-color: var(--green);
-  --h3-color: var(--purple);
+  --h1-color: var(--things-blue);
+  --h2-color: var(--things-green);
+  --h3-color: var(--things-purple);
   --h4-color: var(--text-normal);
   --h5-color: var(--text-normal);
   --h6-color: var(--text-normal);
@@ -42,6 +50,7 @@ body {
 .markdown-preview-view h4, 
 .markdown-preview-view h5, 
 .markdown-preview-view h6 {
+  /* use !important to overwrite codemirror default value */
   font-size: var(--font-text-size, 16px) !important;
 
   /* 1.2-1.8 */
@@ -68,8 +77,8 @@ body {
   color: inherit;
   font-size: 1rem !important;
   letter-spacing: normal !important;
-  /* font-weight: bold !important; */
-
+  font-weight: bold !important;
+  /* font-weight: 700 !important; */
 }
 
 /* disable external link color in editor & reading mode */
@@ -79,6 +88,16 @@ body {
 .external-link {
     color: var(--text-normal);
 }
+
+/* set highlight text color to accent */
+/* different set in light and dark theme */
+/* optimize performance - refer to Cupertino theme */
+.cm-s-obsidian span.cm-highlight,
+.markdown-rendered mark {
+    color: var(--text-accent);
+    background-color: hsla(var(--color-accent-hsl), 0.25);
+}
+
 
 /* highlight active file */
 /* body:not(.is-grabbing) .nav-file-title.is-active:hover,
@@ -91,37 +110,37 @@ body:not(.is-grabbing) .nav-folder-title.is-active:hover,
 
 /* @settings
 
-name: Notes Pro Theme
-id: notes-pro-theme
+name: Notes Mini Theme
+id: notes-mini-theme
 collapsed: false
 settings:
   - 
-      id: my-accent
-      title: Accent Color
+      id: accent-color-set-things
+      title: Accent Color Set
       type: heading
       level: 1
       collapsed: false
   - 
       id: accent
-      title: Accent Color Pink
+      title: Accent Color Things Pink
       type: variable-color
       format: hsl-split
       default: '#ff82b2'
   - 
       id: accent
-      title: Accent Color Blue
+      title: Accent Color Things Blue
       type: variable-color
       format: hsl-split
       default: '#2e80f2'
   - 
       id: accent
-      title: Accent Color Purple
+      title: Accent Color Things Purple
       type: variable-color
       format: hsl-split
       default: '#9e86c8'
   - 
       id: accent
-      title: Accent Color Green
+      title: Accent Color Things Green
       type: variable-color
       format: hsl-split
       default: '#3eb4bf'
